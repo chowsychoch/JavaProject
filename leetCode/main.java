@@ -1,7 +1,5 @@
 package udemy.leetCode;
 
-import java.util.List;
-
 public class main{
 
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class main{
         System.out.println(Arrays.toString(ans));
         maxArea m = new maxArea();
         int[] max = {1,8,6,2,5,4,8,3,7};
-        System.out.println(m.maxArea(max));*/
+        System.out.println(m.maxArea(max));
         int[] nums = {-1, 0, 1, 2, -1, -4};
         ThreeSum threesum = new ThreeSum();
         System.out.println("========================");
@@ -40,11 +38,16 @@ public class main{
         int[] RemoveEle2 = {0,1,2,2,3,0,4,2};
         RemoveEle rss= new RemoveEle();
         System.out.println(rss.removeElement(RemoveEle2,2));
-        */
+
 
         int[] result = {5,7,7,8,8,10};
         FirstALastPos rrrr = new FirstALastPos();
-        System.out.println(rrrr.searchRange(result,8)[1]);
+        System.out.println(rrrr.searchRange(result,8)[1]);*/
+
+        int[] nextPermutation = {1,1};
+        NextPermutation next = new NextPermutation();
+
+        next.nextPermutation(nextPermutation);
 
 
     }
