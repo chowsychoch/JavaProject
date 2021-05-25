@@ -25,10 +25,7 @@ public class main{
        // removeDuplicates r = new removeDuplicates();
        // System.out.println(r.removeDuplicates(numssss));
 
-        int[] numss= {-1,2,1,-4};
-        ThreeSumClosest r = new ThreeSumClosest();
 
-        System.out.println(r.threeSumClosest(numss,1));
 
         /*int [] RemoveEle = {1};
         RemoveEle rs = new RemoveEle();
@@ -42,12 +39,17 @@ public class main{
 
         int[] result = {5,7,7,8,8,10};
         FirstALastPos rrrr = new FirstALastPos();
-        System.out.println(rrrr.searchRange(result,8)[1]);*/
+        System.out.println(rrrr.searchRange(result,8)[1]);
 
         int[] nextPermutation = {1,1};
         NextPermutation next = new NextPermutation();
 
-        next.nextPermutation(nextPermutation);
+        next.nextPermutation(nextPermutation);*/
+
+        int[] numss= {-1,2,1,-4};
+        ThreeSumClosest r = new ThreeSumClosest();
+        System.out.println(r.threeSumClosest(numss,1));
+        ;
 
 
     }
