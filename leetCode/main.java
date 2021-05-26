@@ -44,12 +44,24 @@ public class main{
         int[] nextPermutation = {1,1};
         NextPermutation next = new NextPermutation();
 
-        next.nextPermutation(nextPermutation);*/
+        next.nextPermutation(nextPermutation);
 
         int[] numss= {-1,2,1,-4};
         ThreeSumClosest r = new ThreeSumClosest();
         System.out.println(r.threeSumClosest(numss,1));
-        ;
+
+        int[] nummss = {0,1,3,4,5};
+        int target = 3;
+        RotatedSortedArray rrr = new RotatedSortedArray();
+        System.out.println(rrr.search(nummss, target));*/
+
+        int[] prices = {2,1,2,1,0,1,2};
+
+        BestTimetoBuynSellStock r = new BestTimetoBuynSellStock();
+        r.maxProfit(prices);
+
+
+
 
 
     }
