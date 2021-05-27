@@ -60,15 +60,17 @@ public class main{
         BestTimetoBuynSellStock r = new BestTimetoBuynSellStock();
         r.maxProfit(prices);*/
 
-        String str = "A man, a plan, a canal: Panama";
+        //String str = "A man, a plan, a canal: Panama";
 
-        isPalindrome s = new isPalindrome();
+        isPalindromeV2 s = new isPalindromeV2();
         //s.isPalindrome("A man, a plan, a canal: Panama");
-       // s.isPalindrome("race a car");
-        s.isPalindrome(" ");
+        s.isPalindrome("race a car");
+        //s.isPalindrome(" ");
         //s.isPalindrome("0P");
 
-
+        //String s = "Test1ng-Leet=code-Q!";
+        //ReverseOnlyLetters reverse = new ReverseOnlyLetters();
+        //reverse.reverseOnlyLetters(s);
 
 
     }
