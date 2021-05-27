@@ -53,13 +53,20 @@ public class main{
         int[] nummss = {0,1,3,4,5};
         int target = 3;
         RotatedSortedArray rrr = new RotatedSortedArray();
-        System.out.println(rrr.search(nummss, target));*/
+        System.out.println(rrr.search(nummss, target));
 
         int[] prices = {2,1,2,1,0,1,2};
 
         BestTimetoBuynSellStock r = new BestTimetoBuynSellStock();
-        r.maxProfit(prices);
+        r.maxProfit(prices);*/
 
+        String str = "A man, a plan, a canal: Panama";
+
+        isPalindrome s = new isPalindrome();
+        //s.isPalindrome("A man, a plan, a canal: Panama");
+       // s.isPalindrome("race a car");
+        s.isPalindrome(" ");
+        //s.isPalindrome("0P");
 
 
 
