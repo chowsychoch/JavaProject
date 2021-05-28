@@ -62,15 +62,24 @@ public class main{
 
         //String str = "A man, a plan, a canal: Panama";
 
-        isPalindromeV2 s = new isPalindromeV2();
+        //isPalindromeV2 s = new isPalindromeV2();
         //s.isPalindrome("A man, a plan, a canal: Panama");
-        s.isPalindrome("race a car");
+        //s.isPalindrome("race a car");
         //s.isPalindrome(" ");
         //s.isPalindrome("0P");
 
         //String s = "Test1ng-Leet=code-Q!";
         //ReverseOnlyLetters reverse = new ReverseOnlyLetters();
         //reverse.reverseOnlyLetters(s);
+        AssignCookie ac = new AssignCookie();
+        int [] s = {1,2,3};
+        int[] g = {1,2};
+        ac.findContentChildren(g,s);
+
+        LongPressedName lpn = new LongPressedName();
+        String name = "pyplrz";
+        String typed = "ppyypllr";
+        lpn.isLongPressedName(name,typed);
 
 
     }
