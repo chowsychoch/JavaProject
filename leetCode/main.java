@@ -71,15 +71,20 @@ public class main{
         //String s = "Test1ng-Leet=code-Q!";
         //ReverseOnlyLetters reverse = new ReverseOnlyLetters();
         //reverse.reverseOnlyLetters(s);
-        AssignCookie ac = new AssignCookie();
+       /* AssignCookie ac = new AssignCookie();
         int [] s = {1,2,3};
         int[] g = {1,2};
         ac.findContentChildren(g,s);
 
-        LongPressedName lpn = new LongPressedName();
+        LongPressedNameV2 lpn = new LongPressedNameV2();
         String name = "pyplrz";
         String typed = "ppyypllr";
-        lpn.isLongPressedName(name,typed);
+        lpn.isLongPressedName(name,typed);*/
+
+        BoatsToSavePeople b = new BoatsToSavePeople();
+        int[] people = {3,5,3,4};
+        int limit =5;
+        b.numRescueBoats(people,limit);
 
 
     }
