@@ -14,8 +14,8 @@ public class isPalindromeV2 {
         int a_pointer = 0;
         int b_pointer = fixed_string.length() - 1 ;
         //System.out.println("String:" + fixed_string);
-        while (a_pointer < b_pointer){
-            //System.out.println("a" + a_pointer + "b" +b_pointer);
+        while (a_pointer <= b_pointer){
+            System.out.println("a" + a_pointer + "b" +b_pointer);
 
             if (fixed_string.charAt(a_pointer) != fixed_string.charAt(b_pointer)){
                 return false;

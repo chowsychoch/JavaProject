@@ -64,7 +64,7 @@ public class main{
 
         //isPalindromeV2 s = new isPalindromeV2();
         //s.isPalindrome("A man, a plan, a canal: Panama");
-        //s.isPalindrome("race a car");
+        //s.isPalindrome("abcba");
         //s.isPalindrome(" ");
         //s.isPalindrome("0P");
 
@@ -79,13 +79,19 @@ public class main{
         LongPressedNameV2 lpn = new LongPressedNameV2();
         String name = "pyplrz";
         String typed = "ppyypllr";
-        lpn.isLongPressedName(name,typed);*/
+        lpn.isLongPressedName(name,typed);
 
         BoatsToSavePeople b = new BoatsToSavePeople();
         int[] people = {3,5,3,4};
         int limit =5;
-        b.numRescueBoats(people,limit);
-
+        b.numRescueBoats(people,limit);*/
+       // int[] nums = {-7,-3,2,3,11 };
+        //SqauresofSortedArray s = new SqauresofSortedArray();
+       // s.sortedSquares(nums);
+        BinarySearch s = new BinarySearch();
+        int[] nums = {-1,0,3,5,9,12};
+        int target = 2;
+        s.search(nums,target);
 
     }
 

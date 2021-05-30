@@ -21,12 +21,14 @@ public class isPalindrome {
 
             }
             if (s.charAt(left) != s.charAt(right)){
+                System.out.println("Fal");
                 return false;
             }else{
                 right--;
                 left++;
             }
         }
+        System.out.println("T");
         return true;
 
     }
