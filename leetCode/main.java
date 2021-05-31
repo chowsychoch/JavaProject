@@ -88,10 +88,16 @@ public class main{
        // int[] nums = {-7,-3,2,3,11 };
         //SqauresofSortedArray s = new SqauresofSortedArray();
        // s.sortedSquares(nums);
-        BinarySearch s = new BinarySearch();
-        int[] nums = {-1,0,3,5,9,12};
-        int target = 2;
-        s.search(nums,target);
+        //BinarySearch s = new BinarySearch();
+        //int[] nums = {-1,0,3,5,9,12};
+        //int target = 2;
+        //s.search(nums,target);
+        //SquareX x = new SquareX();
+        //x.mySqrt(8);
+
+        Searcha2DMatrix x = new Searcha2DMatrix();
+        int[][] nums = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
+        x.searchMatrix(nums, 61);
 
     }
 
