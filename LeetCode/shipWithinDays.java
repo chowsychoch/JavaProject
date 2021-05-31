@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class shipWithinDays {
     public int shipWithinDays(int[] weights, int days) {

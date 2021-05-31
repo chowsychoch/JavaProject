@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class isPalindromeV2 {
     public boolean isPalindrome(String s){

@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class RemoveEle {
     public int removeElement(int[] nums, int val) {

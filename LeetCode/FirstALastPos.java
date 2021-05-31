@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class FirstALastPos {
     public int[] searchRange(int[] nums, int target){

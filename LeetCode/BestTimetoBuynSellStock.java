@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class BestTimetoBuynSellStock {
     public int maxProfit(int[] prices) {

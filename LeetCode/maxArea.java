@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class maxArea {
     public int maxArea(int[] height) {

@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 import java.util.ArrayList;
 import java.util.List;

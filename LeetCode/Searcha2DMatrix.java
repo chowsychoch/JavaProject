@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class Searcha2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {

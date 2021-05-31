@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class removeDuplicates {
     public int removeDuplicates(int[] nums) {

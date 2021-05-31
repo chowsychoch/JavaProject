@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class ReverseOnlyLetters {
     public String reverseOnlyLetters(String s) {

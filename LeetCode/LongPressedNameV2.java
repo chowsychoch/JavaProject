@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class LongPressedNameV2 {
     public boolean isLongPressedName(String name, String typed) {

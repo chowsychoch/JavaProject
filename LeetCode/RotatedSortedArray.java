@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class RotatedSortedArray {
     public int search(int[] nums, int target) {

@@ -1,4 +1,4 @@
-package udemy.leetCode;
+package udemy.LeetCode;
 
 public class main{
 
@@ -99,11 +99,15 @@ public class main{
         int[][] nums = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
         x.searchMatrix(nums, 61);*/
 
-        shipWithinDays s = new shipWithinDays();
+        //shipWithinDays s = new shipWithinDays();
         //int[] weights = {1,2,3,4,5,6,7,8,9,10};
-        int[] weights = {1,2,3,1,1};
-        int days = 4;
-        s.shipWithinDays(weights,days);
+        //int[] weights = {1,2,3,1,1};
+       // int days = 4;
+        //s.shipWithinDays(weights,days);
+
+        ContainsLongestSubstrings d = new ContainsLongestSubstrings();
+        String s = " ";
+        d.lengthOfLongestSubstring(s);
 
     }
 
