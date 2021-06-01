@@ -3,17 +3,20 @@ package udemy.LeetCode;
 public class shipWithinDays {
     public int shipWithinDays(int[] weights, int days) {
         int start = 1;
-        int end = Integer.MAX_VALUE;
+        int end =0;
+        for (int weight: weights){
+            end+=weight;
+        }
+        System.out.println("end" + end);
         int retVal = 0;
-        while ( start <= end ){
+        while ( start < end ){
             int mid = start + (end - start )/2;
             if (canShipWithinDays(weights, mid, days)){
                 //System.out.println("S" + start);
                 //end = mid - 1;
                 System.out.println("M" + mid);
-
                 retVal = mid;
-                end = mid -1;
+                //end = mid -1;
                 //return mid;
             }else{
                 System.out.println("False");
@@ -38,7 +41,7 @@ public class shipWithinDays {
         }
        System.out.println("MidWeight" + MidWeight);
         System.out.println("Acc Day " + AccDays );
-        return ( AccDays <= LimitDays);
+        return ( AccDays == LimitDays);
 
     }
 
