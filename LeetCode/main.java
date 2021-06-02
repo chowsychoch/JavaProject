@@ -1,5 +1,7 @@
 package udemy.LeetCode;
 
+import java.util.List;
+
 public class main{
 
     public static void main(String[] args) {
@@ -109,6 +111,17 @@ public class main{
         //String s = "pwwkew";
         //d.lengthOfLongestSubstringV2(s);
 
+        int[] nums = {1,0,-1,0,-2,2 };
+        FourSum foursum = new FourSum();
+        System.out.println("========================");
+
+        //foursum.fourSum(nums,0);
+        for (List<Integer> row: foursum.fourSum(nums, 0)){
+            for (int val: row){
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
