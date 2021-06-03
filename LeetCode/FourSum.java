@@ -21,8 +21,6 @@ public class FourSum {
 
                 while ( start < end ){
                     int sum = nums[i]  + nums[j] + nums[start] + nums[end];
-                    //int mid = start + (end - start) /2;
-
                     if (sum > target ){
                         end-- ;
                         while ( start < end && nums[end] == nums[end + 1])end--;
@@ -39,7 +37,6 @@ public class FourSum {
                 }
             }
         }
-        //System.out.println(result);
         return result;
 
     }
