@@ -1,7 +1,5 @@
 package udemy.LeetCode;
 
-import java.util.List;
-
 public class main{
 
     public static void main(String[] args) {
@@ -96,10 +94,10 @@ public class main{
         //s.search(nums,target);
         //SquareX x = new SquareX();
         //x.mySqrt(8);
-        /*
-        Searcha2DMatrix x = new Searcha2DMatrix();
+
+        /*Searcha2DMatrix x = new Searcha2DMatrix();
         int[][] nums = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
-        x.searchMatrix(nums, 61);*/
+        x.searchMatrix(nums, 61);
 
         shipWithinDays s = new shipWithinDays();
         int[] weights = {1,2,3,4,5,6,7,8,9,10};
@@ -121,7 +119,28 @@ public class main{
                 System.out.print(val + " ");
             }
             System.out.println();
-        }
+        }*/
+        /*
+        char[][] board = {{'5','3','.','.','7','.','.','.','.'}
+                        ,{'6','.','.','1','9','5','.','.','.'}
+                        ,{'.','9','8','.','.','.','.','6','.'}
+                        ,{'8','.','.','.','6','.','.','.','3'}
+                        ,{'4','.','.','8','.','3','.','.','1'}
+                        ,{'7','.','.','.','2','.','.','.','6'}
+                        ,{'.','6','.','.','.','.','2','8','.'}
+                        ,{'.','.','.','4','1','9','.','.','5'}
+                        ,{'.','.','.','.','8','.','.','7','9'}};
+        ValidSudoku v = new ValidSudoku();
+        v.isValidSudoku(board);*/
+        LinkedListCycle c = new LinkedListCycle();
+        c.push(2);
+        c.push(2);
+        c.push(2);
+        c.push(2);
+        /*Create loop for testing */
+        //c.head.next.next.next.next = c.head;
+        System.out.println(c.hasCycleV3());
+        c.hasCycleV3();
     }
 
 }

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 
-public class Demo {
+public class LinkedLt {
     public static void main(String[] args){
         LinkedList<String> places = new LinkedList<String>();
         addOrder(places,"Adelaide");
