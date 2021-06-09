@@ -131,16 +131,18 @@ public class main{
                         ,{'.','.','.','4','1','9','.','.','5'}
                         ,{'.','.','.','.','8','.','.','7','9'}};
         ValidSudoku v = new ValidSudoku();
-        v.isValidSudoku(board);*/
+        v.isValidSudoku(board);
         LinkedListCycle c = new LinkedListCycle();
         c.push(2);
         c.push(2);
         c.push(2);
         c.push(2);
-        /*Create loop for testing */
+        /*Create loop for testing
         //c.head.next.next.next.next = c.head;
         System.out.println(c.hasCycleV3());
-        c.hasCycleV3();
+        c.hasCycleV3();*/
+
+
     }
 
 }
