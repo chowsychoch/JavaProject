@@ -91,6 +91,7 @@ public class MyLinkedList {
                         return;
                 }
                 else {
+
                         Node current = head;
                         Node curr = new Node(val);
                         for (int i =0; i < index - 1 ; i++){
@@ -101,6 +102,7 @@ public class MyLinkedList {
                         current.next = curr;
                         length++;
                         printList();
+
                 }
 
         }
