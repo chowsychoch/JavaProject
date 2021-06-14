@@ -93,13 +93,16 @@ public class MyLinkedList {
                 else {
 
                         Node current = head;
-                        Node curr = new Node(val);
+                        Node newNode = new Node(val);
                         for (int i =0; i < index - 1 ; i++){
                                 current = current.next;
 
                         }
-                        curr.next = current.next;
-                        current.next = curr;
+                        newNode.next = current.next;
+                        // 1 -- > 2 --- > 3
+                        //        4 --- >3
+                        current.next = newNode;
+                        // 1 --- > 2 -----> 4 -- > 3
                         length++;
                         printList();
 
