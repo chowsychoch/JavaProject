@@ -7,34 +7,34 @@ public class LinkedListCycle {
 
     static ListNode head;
 
-     //Definition for singly-linked list.
-     static class ListNode {
-          int val;
-          ListNode next;
+    //Definition for singly-linked list.
+    static class ListNode {
+        int val;
+        ListNode next;
 
-          ListNode(int x) {
-              val = x;
-              next = null;
-          }
-      }
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
 
-      static public void push(int new_data) {
-          ListNode newNode = new ListNode(new_data);
+    static public void push(int new_data) {
+        ListNode newNode = new ListNode(new_data);
 
-          newNode.next = head;
+        newNode.next = head;
 
-          head = newNode;
-      }
+        head = newNode;
+    }
 
     public boolean hasCycle() {
 
-        if ( head == null)return false;
+        if (head == null) return false;
         ListNode fast = head.next;
         ListNode slow = head;
 
-        while ( slow != fast ){
+        while (slow != fast) {
 
-            if ( fast == null || fast.next == null){
+            if (fast == null || fast.next == null) {
                 return false;
             }
             slow = slow.next;
@@ -43,33 +43,46 @@ public class LinkedListCycle {
         return true;
     }
 
-    public boolean hasCycleV2(){
-         ListNode slow = head;
-         ListNode fast = head;
-         while ( slow.next != null && fast.next.next != null){
-             fast = fast.next.next;
-             slow = slow.next;
+    public boolean hasCycleV2() {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (slow.next != null && fast.next.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
 
-             if ( fast == slow){
-                 return true;
-             }
-         }
-         return false;
+            if (fast == slow) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    public boolean hasCycleV3(){
+    public boolean hasCycleV3() {
         HashSet<ListNode> h = new HashSet();
-        if ( head == null )return false;
-        if ( head.next == null) return false;
+        if (head == null) return false;
+        if (head.next == null) return false;
 
-        while ( head != null){
-            if (h.contains(head)){
+        while (head != null) {
+            if (h.contains(head)) {
                 return true;
-            }else{
+            } else {
                 h.add(head);
                 head = head.next;
             }
         }
         return false;
+    }
+
+    public boolean hasCycle(ListNode head) {
+        if (head == null)return false;
+        ListNode fast = head.next;
+        ListNode slow = head;
+
+        while (fast != slow) {
+            if ( fast == null &&  fast.next == null)return false;
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return true;
     }
 }
