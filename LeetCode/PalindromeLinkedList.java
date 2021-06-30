@@ -8,7 +8,6 @@ public class PalindromeLinkedList {
         p.isPalindrome(l1);
     }
     public boolean isPalindrome(ListNode head) {
-
         if (head == null )return false;
         ListNode dummy = new ListNode(0, head);
         ListNode fast = head;
@@ -31,13 +30,13 @@ public class PalindromeLinkedList {
 
         while ( slow != null){
             if( slow.val != fast.val){
-                System.out.println("F");
+                //System.out.println("F");
                 return false;
             }
             slow = slow.next;
             fast = fast.next;
         }
-        System.out.println("True");
+        //System.out.println("True");
         return true;
     }
 }
