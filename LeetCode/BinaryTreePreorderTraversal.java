@@ -2,6 +2,7 @@ package udemy.LeetCode;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 public class BinaryTreePreorderTraversal {
     List<Integer> res = new LinkedList<>();
@@ -24,4 +25,25 @@ public class BinaryTreePreorderTraversal {
         }
         return res;
     }
+
+    //Iterative Approach
+    public List<Integer> preorderTraversal2 (TreeNode root){
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+
+        while (current != null || !stack.isEmpty()){
+            //visit left
+            while ( current != null){
+                //visit data
+                res.add(current.val);
+                stack.push(current);
+                current = current.left;
+            }
+            current = stack.pop();
+            //visit right
+            current = current.right;
+        }
+        return res;
+    }
+
 }
