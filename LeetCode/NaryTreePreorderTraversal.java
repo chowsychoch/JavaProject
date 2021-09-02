@@ -16,6 +16,6 @@ public class NaryTreePreorderTraversal {
             curr = curr.children.get(0);
             preorder(curr.children.get(0));
         }
-
+        return res;
     }
 }
