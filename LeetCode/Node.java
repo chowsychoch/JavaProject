@@ -2,7 +2,7 @@ package udemy.LeetCode;
 
 import java.util.List;
 
-public class Node {
+public class Node extends udemy.DFS.Node {
     public int val;
     public List<Node> children;
 
