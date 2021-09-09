@@ -1,43 +1,42 @@
 package udemy.LeetCode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
+import java.util.Stack;
 
+//LeetCode 589 // DFS
 public class NaryTreePreorderTraversal {
     List<Integer> res = new LinkedList<>();
-
+    //recursive
     public List<Integer> preorder(Node root){
-        List<Integer> result = new ArrayList<>();
-        Queue<Node> q = new LinkedList<>();
-        if (root == null) return result;
-
-        q.add(root);
-
-        while (!q.isEmpty()){
-            int size = q.size();
-            for (int i = 0; i < size ; i++){
-                Node curr = q.poll();
-                result.add(curr.val);
-                for (Node child: curr.children){
-                    q.add(child);
-                }
-            }
-        }
-        return result;
-    }
-
-    public List<Integer> preorder2(Node root) {
-        if ( root == null)return res;
-        Node curr = root;
-        //visit data
-        res.add(curr.val);
-        //visit children
-        if (curr.children != null){
-            curr = curr.children.get(0);
-            preorder(curr.children.get(0));
+        // empty then return
+        if (root == null) return res;
+        // preorder add val first
+        res.add(root.val);
+        // visit its children
+        for (Node child:root.children){
+            //recursive call
+            preorder(child);
         }
         return res;
+    }
+
+    //iterative
+    public List<Integer> preorder2(Node root) {
+        if (root == null)return res;
+
+        Stack<Node> stack = new Stack<>();
+
+        stack.add(root);
+
+        while ( !stack.isEmpty()){
+            Node curr = stack.pop();
+            res.add(curr.val);
+            for ( int i = curr.children.size() -1 ; i >= 0 ; i--){
+                stack.add(curr.children.get(i));
+            }
+        }
+        return res;
+
     }
 }
