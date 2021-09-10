@@ -10,7 +10,7 @@ public class BalancedBinaryTree {
                 && isBalanced(root.right);
     }
     private int height (TreeNode node){
-        if (node == null)  return -1;
+        if (node == null)  return 0;
         int height = 1 + Math.max(height(node.left), height(node.right));
         return height;
     }
