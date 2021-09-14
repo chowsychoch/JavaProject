@@ -21,20 +21,20 @@ public class LetterCombinationsofaPhoneNumber {
             return;
         }
         String letters = keyboard[digits.charAt(index) - '0'];
-        System.out.println(digits.charAt(index));
-        System.out.println("letter is " + letters);
+        // System.out.println(digits.charAt(index));
+        // System.out.println("letter is " + letters);
         for (int i =0; i < letters.length(); i++){
             char c = letters.charAt(i);
-            System.out.println("appended: " + c);
+            //System.out.println("appended: " + c);
             sb.append(c);
-            System.out.println(sb);
+            //System.out.println(sb);
             dfs(results,index + 1 ,sb, digits);
-            System.out.println("before sb: " + sb);
-            System.out.println("To be deleted: "+sb.charAt(sb.length() -1 ));
-            System.out.println("deleted: "+sb.deleteCharAt(sb.length() -1 ));
-            System.out.println(" after sb: " + sb);
+            //System.out.println("before sb: " + sb);
+            //System.out.println("To be deleted: "+sb.charAt(sb.length() -1 ));
+            //System.out.println("deleted: "+sb.deleteCharAt(sb.length() -1 ));
+            //System.out.println(" after sb: " + sb);
 
-            //sb.deleteCharAt(sb.length() -1 );
+            sb.deleteCharAt(sb.length() -1 );
         }
     }
 }

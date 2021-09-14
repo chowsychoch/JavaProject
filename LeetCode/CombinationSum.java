@@ -9,8 +9,53 @@ public class CombinationSum {
         n.combinationSum(new int[]{2, 3, 6, 7}, 7);
     }
 
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> res = new ArrayList<>() ;
+    public List<List<Integer>> combinationSum(int[] candidates, int target)
+    {
+        List<List<Integer>> results = new ArrayList<>();
+
+        if ( candidates == null || candidates.length == 0)return results;
+        List<Integer> current = new ArrayList<>();
+        backtracker(candidates, 0, target, current, results);
+        return results;
+    }
+
+    private void backtracker(int[] candidates, int index, int target, List<Integer> current, List<List<Integer>> results)
+    {
+        // base case
+        if ( target < 0 ){
+            return;
+        }
+        // goal
+        if (target == 0 ){
+            results.add(current);
+            return;
+        }
+
+        for ( int i = 0; i < candidates.length ; i++){
+            current.add(candidates[i]);
+            backtracker(candidates, index, target - candidates[index], current, results);
+            current.remove(candidates[candidates.length - 1 ]);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList<>();
         backTracking(candidates, target, 0, new ArrayList<>(), res);
         System.out.println(res);
         return res;
