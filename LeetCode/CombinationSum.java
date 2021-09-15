@@ -27,7 +27,7 @@ public class CombinationSum {
         }
         // goal
         if (target == 0 ){
-            results.add(current);
+            results.add(new ArrayList<>(current));
             return;
         }
 
