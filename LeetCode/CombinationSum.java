@@ -31,10 +31,10 @@ public class CombinationSum {
             return;
         }
 
-        for ( int i = 0; i < candidates.length ; i++){
+        for ( int i = index; i < candidates.length ; i++){
             current.add(candidates[i]);
-            backtracker(candidates, index, target - candidates[index], current, results);
-            current.remove(candidates[candidates.length - 1 ]);
+            backtracker(candidates, i, target - candidates[i], current, results);
+            current.remove(current.size() - 1);
         }
 
     }
