@@ -40,6 +40,27 @@ public class mergeArray {
         }
 
     }
+
+    public void merge2(int[] nums1, int m, int[] nums2, int n) {
+        int n_pointer = n -1 ;
+        int m_pointer = m -1 ;
+
+        for (int i = nums1.length - 1 ; i >=0 ; i--){
+
+            if ( n_pointer < 0){
+                break;
+            }
+            if ( m_pointer >=0 && nums2[n_pointer] < nums1[m_pointer]){
+                nums1[i] = nums1[m_pointer];
+                m_pointer--;
+
+            }else{
+                nums1[i] = nums2[n_pointer];
+                n_pointer--;
+            }
+        }
+
+    }
 }
 
 
