@@ -3,6 +3,7 @@ package udemy.LeetCode;
 public class ReshapetheMatrix {
     // Time Complexity O (m * n )
     // Space Complextiy O (m * n)
+    //https://leetcode.com/problems/reshape-the-matrix/
     public int[][] matrixReshape(int[][] mat, int r, int c) {
         if ( mat.length * mat[0].length != r * c)
             return mat;
