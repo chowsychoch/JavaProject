@@ -7,35 +7,8 @@ public class ImplementstrStr {
         System.out.println(an);
 
     }
-    public int strStr(String haystack, String needle) {
-        if(needle.isEmpty()) return 0;
-        char startChar = needle.charAt(0);
-        int len = needle.length();
-        for (int i =0; i < haystack.length() - len + 1; i++){
-            //System.out.println("time");
-            String ans = "";
-            if (haystack.charAt(i) == startChar){
-                //System.out.println("match");
 
-
-                if (haystack.length() > needle.length()){
-                    ans = haystack.substring(i, (i +len)  );
-
-                }else{
-                    ans = haystack.substring(i, haystack.length() );
-                }
-                //System.out.println(ans);
-                if (ans.equals(needle)){
-                    //System.out.println("hey");
-                    return i;
-                }
-            }
-        }
-        //Nothing found
-        return -1;
-    }
-
-    public int strStr2(String haystack, String needle){
+    public int strStr(String haystack, String needle){
         if (needle.isEmpty())return 0;
         int m = haystack.length();
         int n = needle.length();
