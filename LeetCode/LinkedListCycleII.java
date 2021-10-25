@@ -38,7 +38,7 @@ public class LinkedListCycleII {
     }
 
 
-    public ListNode detectCycle(ListNode head) {
+    public ListNode detectCycleII(ListNode head) {
 
         if (head == null) {
             return null;
